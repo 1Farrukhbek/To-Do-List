@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping List</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-success" >
+
+  <section>
+    <div class="container w-50 mt-2 text-center">
+      <h2 class="site_heading text-uppercase text-white">To do list</h2>
+
+      <form class="item__form d-flex" action="https://echo.htmlacademy.ru" method="POST">
+        <div class="form-group w-100 mr-4">
+          <input class="item__input form-control" type="text" name="inputItem" placeholder="Task" autocomplete="off" aria-label="Input item to the list" required>
+        </div>
+
+        <button class="btm btn-primary form-group form-control w-auto" type="submit">+</button>
+      </form>
+
+      <div class="custom-control custom-switch mb-1">
+        <input type="checkbox" class="swith__custom custom-control-input" id="customSwitch">
+        <label class="custom-control-label h4 text-white" for="customSwitch">Important</label>
+      </div>
+
+      <ul class="shopping__list list-group"></ul>
+    </div>
+  </section>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
